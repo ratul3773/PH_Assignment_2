@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import jwt, { JwtPayload } from "jsonwebtoken";
-import { getAllUsers } from "../user/user.service";
 
 const auth = () => {
   return async (req: Request, res: Response, next: Function) => {
