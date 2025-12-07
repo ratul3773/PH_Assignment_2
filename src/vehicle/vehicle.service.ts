@@ -35,6 +35,10 @@ const DeleteVehicle = async (vehicleId: number) => {
     if(havebookings.rows.length > 0){
         throw new Error('Cannot delete vehicle with existing bookings');
     }
+    const isExisting = await pool.query(`SELECT * FROM vehicles WHERE id = $1`, [vehicleId]);
+    if(isExisting.rows.length === 0){
+        throw new Error('Vehicle does not exist');
+    }
     const result = await pool.query(`DELETE FROM vehicles WHERE id = $1`, [vehicleId]);
     return result;
 }
