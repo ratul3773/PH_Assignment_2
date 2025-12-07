@@ -51,6 +51,7 @@ src/
 ```sh
 git clone https://github.com/<your-username>/vehicle-booking-system.git
 cd vehicle-booking-system
+```
 2️⃣ Install Dependencies
 sh
 Copy code
