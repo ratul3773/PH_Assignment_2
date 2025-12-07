@@ -34,12 +34,13 @@ A backend system for managing vehicle booking, users, and role-based access usin
 - PostgreSQL
 
 ## 📂 Project Folder Structure  
-```ts
+```sh
 src/
+|── auth/
 │── modules/
 │── middlewares/
-│── utils/
-│── routes/
+│── config/
+│── type/
 │── app.ts
 └── server.ts
 ```
