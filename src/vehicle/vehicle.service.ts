@@ -31,14 +31,16 @@ const updateVehicle = async (payload : Record<string, unknown>, vehicleId: numbe
 }
 
 const DeleteVehicle = async (vehicleId: number) => {
-    const havebookings = await pool.query(`SELECT * FROM bookings WHERE vehicle_id = $1`, [vehicleId]);
-    if(havebookings.rows.length > 0){
-        throw new Error('Cannot delete vehicle with existing bookings');
-    }
+
     const isExisting = await pool.query(`SELECT * FROM vehicles WHERE id = $1`, [vehicleId]);
     if(isExisting.rows.length === 0){
         throw new Error('Vehicle does not exist');
     }
+    const havebookings = await pool.query(`SELECT * FROM bookings WHERE vehicle_id = $1`, [vehicleId]);
+    if(havebookings.rows.length > 0){
+        throw new Error('Cannot delete vehicle with existing bookings');
+    }
+    
     const result = await pool.query(`DELETE FROM vehicles WHERE id = $1`, [vehicleId]);
     return result;
 }
