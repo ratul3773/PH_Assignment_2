@@ -1,9 +1,9 @@
 import express from 'express'
 import { initDB } from './config/DB'
 import { AuthRouter } from './auth/auth.route'
-import { UserRouter } from './user/user.routes'
-import { VehicleRouter } from './vehicle/vehicle.route'
-import { BookingRouter } from './booking/booking.routes'
+import { UserRouter } from './modules/user/user.routes'
+import { VehicleRouter } from './modules/vehicle/vehicle.route'
+import { BookingRouter } from './modules/booking/booking.routes'
 
 const app = express()
 

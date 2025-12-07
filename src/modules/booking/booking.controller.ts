@@ -1,6 +1,6 @@
 import e, { Request, Response } from 'express';
 import { Booking } from './booking.service';
-import { } from '../types/index'
+import { } from '../../types/index'
 
 const getAll_Bookings = async (req: Request, res: Response) => {
   try {

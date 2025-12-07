@@ -1,4 +1,4 @@
-import { pool } from '../config/DB';
+import { pool } from '../../config/DB';
 
 const createVehicle = async (payload : Record<string, unknown>) => {
     const { vehicle_name, type, registration_number, daily_rent_price, availability_status } = payload;
