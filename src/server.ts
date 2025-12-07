@@ -8,7 +8,7 @@ const port = config.PORT
 const start = async () => {
   await Booking.autoUpdateBookings().catch(console.error);
 
-  setInterval(() => {
+  setInterval(() => { 
     Booking.autoUpdateBookings().catch(console.error);
   }, 86400 * 1000);
 
