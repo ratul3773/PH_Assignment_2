@@ -12,7 +12,7 @@ const start = async () => {
     Booking.autoUpdateBookings().catch(console.error);
   }, 86400 * 1000);
 
-  app.get('/', (res: e.Response) => {
+  app.get('/', (req: e.Request, res: e.Response) => {
     res.send('Welcome to the Booking Service API');
   });
   app.listen(port, () => {
