@@ -52,53 +52,45 @@ src/
 git clone https://github.com/<your-username>/vehicle-booking-system.git
 cd vehicle-booking-system
 ```
-2️⃣ Install Dependencies
-sh
-Copy code
+### 2️⃣ Install Dependencies
+```sh
 npm install
-3️⃣ Configure environment variables
+```
+### 3️⃣ Configure environment variables
 Create a .env file in the root directory and add:
-
+```sh
 env
-Copy code
 PORT=5000
 DATABASE_URL=your-db-url
 JWT_SECRET=your-secret
-4️⃣ Build TypeScript
-sh
-Copy code
+```
+### 4️⃣ Build TypeScript
+```sh
 npm run build
-5️⃣ Start the Server
+```
+### 5️⃣ Start the Server
 Development
-sh
-Copy code
-npm run dev
-Production
-sh
-Copy code
-npm start
+```sh
+npm run start
+```
 API Base URL → http://localhost:5000
 
-▶️ Example Scripts
-sh
-Copy code
-npm run dev
+### ▶️ Example Scripts
+```sh
 npm run build
 npm run start
-🔐 User Roles
-Role	Permission
-Admin	Manage vehicles, manage bookings
-User	Book vehicle
-Guest	Limited API access
+```
+### 🔐 User Roles
+- Role	Permission
+- Admin	Manage vehicles, manage bookings
+- User	Book vehicle
 
-🧪 API Testing
+### 🧪 API Testing
 You can test APIs using:
 
-Postman
-
-Thunder Client
-
-Insomnia
+- Postman
+- Thunder Client
+- Insomnia
 
 📄 License
 Open source project — can be used for learning and portfolio purposes.
