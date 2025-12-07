@@ -50,7 +50,7 @@ src/
 ### 1️⃣ Clone the repository  
 
 ```sh
-git clone https://github.com/<your-username>/vehicle-booking-system.git
+git clone https://github.com/<your-username>/PH_Assignment_2.git
 cd vehicle-booking-system
 ```
 ### 2️⃣ Install Dependencies
