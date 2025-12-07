@@ -92,5 +92,3 @@ You can test APIs using:
 - Thunder Client
 - Insomnia
 
-📄 License
-Open source project — can be used for learning and portfolio purposes.
