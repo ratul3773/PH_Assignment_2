@@ -11,8 +11,6 @@ const prefix = '/api/v1';
 initDB()
 app.use(express.json())
 // app.use(express.urlencoded({ extended: true }))
-
-
 app.use(`${prefix}/auth`, AuthRouter);
 app.use(`${prefix}/users`, UserRouter);
 app.use(`${prefix}/vehicles`, VehicleRouter);
