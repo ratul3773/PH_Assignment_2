@@ -51,7 +51,7 @@ src/
 
 ```sh
 git clone https://github.com/<your-username>/PH_Assignment_2.git
-cd vehicle-booking-system
+cd PH_Assignment_2
 ```
 ### 2️⃣ Install Dependencies
 ```sh
