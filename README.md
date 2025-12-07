@@ -59,7 +59,6 @@ npm install
 ### 3️⃣ Configure environment variables
 Create a .env file in the root directory and add:
 ```sh
-env
 PORT=5000
 DATABASE_URL=your-db-url
 JWT_SECRET=your-secret
